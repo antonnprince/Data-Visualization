@@ -14,7 +14,7 @@ mongoose.connect(mongo_url).then(()=>{
     app.listen(3000, ()=>{console.log("Server running")})
 })
 
-app.get('/data', async(req,res)=>{
+app.get('/sample', async(req,res)=>{
     try {
         const result = await hotelBookings.find({})
         return res.status(200).json(result)
