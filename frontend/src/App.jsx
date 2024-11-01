@@ -1,12 +1,12 @@
 import { useState } from 'react'
-
+import TimeSeries from './TimeSeries.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <p className='text-3xl'>Hello </p>
+     <TimeSeries/>
     </>
   )
 }
